@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <title></title>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="home-section">
+                <h1 id="home-name">HOME</h1>
+                <div class="score">
+                    <h2 id="home-score"></h2>
+                </div>
+                <button class="btn" id="home-add1" onclick="Add1('home-score','num1');colorChange()">+1</button>
+                <button class="btn" id="home-add2" onclick="Add2('home-score','num1');;colorChange()">+2</button>
+                <button class="btn" id="home-add3" onclick="Add3('home-score','num1');;colorChange()">+3</button>
+            </div>
+            <div class="guest-section">
+                <h1 id="guest-name">GUEST</h1>
+                <div class="score">
+                    <h2 id="guest-score"></h2>
+                </div>
+                <button class="btn" id="guest-add1" onclick="Add1('guest-score','num2');colorChange()">+1</button>
+                <button class="btn" id="guest-add2" onclick="Add2('guest-score','num2');colorChange()">+2</button>
+                <button class="btn" id="guest-add3" onclick="Add3('guest-score','num2');colorChange()">+3</button>
+            </div>
+        </div>
+        <button class="btn" id="new-game" onclick="newGame()">NEW GAME</button>
+        <script src="index.js"></script>
+    </body>
+</html>
